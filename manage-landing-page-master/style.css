@@ -117,3 +117,12 @@ svg {
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+/* Utility classes */
+.text-primary-400{
+  color: var(--clr-primary-400);
+}
+
+.text-accent-400{
+  color: var(--clr-accent-400);
+}
