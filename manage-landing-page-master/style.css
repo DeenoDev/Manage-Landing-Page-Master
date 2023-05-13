@@ -11,6 +11,17 @@
     --ff-body: var(--ff-primary);
     --ff-heading: var(--primary);
 
+    --fw-regular: 400;
+    --fw-semi-bold: 500;
+    --fw-bold: 700;
+    
+    --fs-300: .8125rem;
+    --fs-400: .875rem;
+    --fs-500: 1rem;
+    --fs-600: 1.875rem;
+    --fs-600: 2.5rem;
+    
+
 }
 
 
