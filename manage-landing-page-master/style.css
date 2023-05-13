@@ -1,3 +1,17 @@
+:root{
+    --clr-primary-400:hsl(12, 88%, 59%);
+    --clr-primary-100:hsl(13, 100%, 96%);
+
+    --clr-primary-400: hsl(228, 39%, 23%);
+
+    --clr-primary-100:hsl(232, 12%, 13%);
+    --clr-primary-900:hsl(0 0% 0%);
+
+}
+
+
+
+
 /* Box sizing rules */
 *,
 *::before,
