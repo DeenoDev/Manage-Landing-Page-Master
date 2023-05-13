@@ -7,6 +7,10 @@
     --clr-primary-100:hsl(232, 12%, 13%);
     --clr-primary-900:hsl(0 0% 0%);
 
+    --ff-primary: 'Be Vietnam Pro', sans-serif;
+    --ff-body: var(--ff-primary);
+    --ff-heading: var(--primary);
+
 }
 
 
