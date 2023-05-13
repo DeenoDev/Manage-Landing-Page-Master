@@ -138,3 +138,15 @@ svg {
 .text-neutral-900{
   color: var(--clr-neutral-900);
 }
+
+.fw-bold{font-weight: var(--fw-bold);}
+.fw-semi-bold{font-weight: var(--fw-semi-bold);}
+.fw-regular{font-weight: var(--fw-regular);}
+
+.fs-primary-heading{
+  font-size: var(--fs-primary-heading);
+}
+
+.fs-secondary-heading{
+  font-size: var(--fs-secondary-heading);
+}
