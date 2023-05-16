@@ -4,8 +4,8 @@
 
   --clr-primary-400: hsl(228, 39%, 23%);
 
-  --clr-neutral-100: hsl(232, 12%, 13%);
-  --clr-neutral-900: hsl(0 0% 0%);
+  --clr-neutral-900: hsl(232, 12%, 13%);
+  --clr-neutral-100: hsl(0 0% 100%);
 
   --ff-primary: "Be Vietnam Pro", sans-serif;
 
@@ -170,4 +170,12 @@ svg {
 }
 .fs-600 {
   font-size: var(--fs-600);
+}
+
+/* General Styling */
+
+body{
+  font-size: var(--fs-body);
+  font-family: var(--ff-body);
+  color: var(--clr-primary-400);
 }
