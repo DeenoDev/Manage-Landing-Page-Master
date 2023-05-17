@@ -239,6 +239,14 @@ body{
   box-shadow: 0 1.125em 1em -1em var(--clr-accent-500);
 
 }
+
+.button[data-type="inverted"]{
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-accent-400);
+
+}
+
+
 .button:hover,
 .button:focus-within{
     background-color: var(--clr-accent-300);
