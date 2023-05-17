@@ -1,5 +1,7 @@
 :root {
+  --clr-accent-500: hsl(12, 60%, 45%);
   --clr-accent-400: hsl(12, 88%, 59%);
+  --clr-accent-300: hsl(12, 88%, 75%);
   --clr-accent-100: hsl(13, 100%, 96%);
 
   --clr-primary-400: hsl(228, 39%, 23%);
@@ -225,6 +227,8 @@ body{
 
 /* button */
 .button {
+  cursor: pointer;
+  text-decoration: none;
   border: 0;
   border-radius: 100vmax;
   padding: 1em 2em;
@@ -232,7 +236,12 @@ body{
   font-size: var(--fs-button);
   color: var(--clr-neutral-100);
   background-color: var(--clr-accent-400);
+  box-shadow: 0 1.125em 1em -1em var(--clr-accent-500);
 
+}
+.button:hover,
+.button:focus-within{
+    background-color: var(--clr-accent-300);
 }
 
 
