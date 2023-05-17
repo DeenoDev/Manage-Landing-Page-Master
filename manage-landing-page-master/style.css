@@ -223,3 +223,17 @@ body{
   color: var(--clr-primary-400);
 }
 
+/* button */
+.button {
+  border: 0;
+  border-radius: 100vmax;
+  padding: 1em 2em;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-button);
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-accent-400);
+
+}
+
+
+
