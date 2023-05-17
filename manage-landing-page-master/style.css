@@ -165,9 +165,11 @@ svg {
 
 .fs-primary-heading {
   font-size: var(--fs-primary-heading);
+  line-height: 1.1;
 }
 .fs-secondary-heading {
   font-size: var(--fs-secondary-heading);
+  line-height: 1.1;
 }
 
 .fs-300 {
