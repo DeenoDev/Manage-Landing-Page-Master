@@ -183,8 +183,12 @@ svg {
   font-size: var(--fs-600);
 }
 
-.padding-block {
-  padding-block: ;
+.padding-block-900 {
+  padding-block: var(--size-900);
+}
+
+.padding-block-700 {
+  padding-block: var(--size-700);
 }
 
 .container {
