@@ -15,10 +15,11 @@
 <body>
   <header class="primary-header">
     <div class="container">
+      <div class="nav-wrapper">
       <a href="#"><img src="images/logo.svg" alt="Manage"></a>
-      <button class="mobile-mav-toggle" aria-controls="primary-navigation">
-        <img src="images/icon-hamburger.svg" alt="" aria-hidden="true">
-        <img src="images/icon-close.svg" alt="" aria-hidden="true">
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+        <img class="icon-hamburger" src="images/icon-hamburger.svg" alt="" aria-hidden="true">
+        <img class="icon-close" src="images/icon-close.svg" alt="" aria-hidden="true">
         <span class="visually-hidden">Menu</span>
       </button>
       <nav class="primary-navigation">
@@ -30,7 +31,8 @@
           <li><a href="#">Community</a></li>
         </ul>
       </nav>
-      <button class="button">Get Started</button>
+      <button class="button" style="display: none">Get Started</button>
+    </div>
     </div>
   </header>
 
