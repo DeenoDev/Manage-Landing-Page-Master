@@ -212,12 +212,27 @@ body{
 
 .nav-list{
   gap: var(--size-600);
+
 }
 
 .nav-list{
   display: flex;
-  gap: clamp(var(--size-500), 5vw, var(--size-800));
+  gap: clamp(var(--size-400), 5vw, var(--size-700));
+  font-weight: var(--fw-semi-bold);
+  text-decoration: none;
 }
+
+.nav-list a{
+  text-decoration: none;
+  color: var(--clr-primary-400);
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+  color: var(--clr-accent-400);
+
+}
+
 
 @media (max-width: 50em){
   .primary-navigation{
@@ -244,22 +259,10 @@ body{
     display: grid;
     gap: var(--size-600);
     text-align: center;
-    font-size: var(--fs-nav);
     font-weight: var(--fw-bold);
-    
   }
 
-  .nav-list a {
-    text-decoration: none;
-    color: var(--clr-primary-400);
-
-  }
-
-  .nav-list a:hover,
-  .nav-list a:focus {
-    color: var(--clr-accent-400);
-
-  }
+  
 
   .primary-navigation[data-visible] {
     display: block;
