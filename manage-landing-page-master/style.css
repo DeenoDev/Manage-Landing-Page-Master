@@ -275,7 +275,8 @@ body{
 /* Navigation */
 
 .primary-header{
-  margin-top: var(--size-700);
+  padding-top: var(--size-700);
+  
 }
 
 .nav-wrapper{
@@ -304,13 +305,14 @@ body{
     box-shadow: 0 0 .75em rgb(0, 0, 0, 0.05);
   }
 
-  /* .primary-navigation::before{
+  .primary-header[data-overlay]::before{
     content: " ";
-    position: absolute;
+    position: fixed;
     inset: 0;
-    background-image: linear-gradient(red, blue);
+    background-image: linear-gradient(rgb(0 0 0/ 0), rgb(0 0 0 / 0.8));
+    /* height: 100vh; */
 
-  } */
+  }
 
   .nav-list{
     display: grid;
