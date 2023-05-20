@@ -291,11 +291,22 @@ body{
 @media (max-width: 50em){
   .primary-navigation{
     display: none;
+
+    position: fixed;
+    inset: 7rem var(--size-400) auto;
+    background: var(--clr-neutral-900);
+    border-radius: var(--size-100);
+  }
+
+  .nav-list{
+    display: grid;
+    gap: var(--size-400);
+    
   }
 
   .primary-navigation[data-visible] {
     display: block;
-    position: fixed;
+    
   }
 
 
