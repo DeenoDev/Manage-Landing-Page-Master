@@ -297,7 +297,7 @@ body{
   .primary-navigation{
     display: none;
 
-    position: absolute;
+    position: fixed;
     padding: var(--size-700);
     inset: 7rem var(--size-400) auto;
     background: var(--clr-neutral-100);
@@ -343,6 +343,10 @@ body{
 
   .mobile-nav-toggle{
     display: block;
+    position: fixed;
+    top: var(--size-600);
+    right: var(--size-400);
+    z-index: 100;
     cursor: pointer;
     background: transparent;
     border: 0;
