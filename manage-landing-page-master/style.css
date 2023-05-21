@@ -127,27 +127,7 @@ svg {
 
 
 
-.container {
-  --max-width:1110px;
-  --padding:1rem;
 
-  width: min(var(--max-width), 100% - (var(--padding) *2));
-  margin-inline: auto;
-}
-
-.even-columns{
-  display: grid;
-  gap: 1rem;
-
-}
-
-@media (min-width: 50em){
-  .even-columns{
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-  }
-
-}
 
 /* General Styling */
 
@@ -291,6 +271,33 @@ body{
 }
 
 /* Utility classes */
+
+.container {
+  --max-width:1110px;
+  --padding:1rem;
+
+  width: min(var(--max-width), 100% - (var(--padding) *2));
+  margin-inline: auto;
+}
+
+:where(.flow :not(:first-child)){
+  margin-top: var(--flow-spacer, 1em);
+
+}
+
+.even-columns{
+  display: grid;
+  gap: 1rem;
+
+}
+
+@media (min-width: 50em){
+  .even-columns{
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+
+}
 
 .visually-hidden {
   position: absolute;
