@@ -281,7 +281,7 @@ body{
 }
 
 :where(.flow :not(:first-child)){
-  margin-top: var(--flow-spacer, 1em);
+  margin-top: var(--flow-spacer, 3em);
 
 }
 
