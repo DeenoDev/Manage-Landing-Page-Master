@@ -289,6 +289,14 @@ p[data-width="wide"]{
   margin-inline: auto;
 }
 
+.vertical-align-center {
+  align-items: center;
+}
+
+.justify-self-end {
+  justify-self: end;
+}
+
 :where(.flow :not(:first-child)){
   margin-top: var(--flow-spacer, 3em);
 
