@@ -291,8 +291,9 @@ p[data-width="wide"]{
   position: absolute;
   z-index: -1;
   inset: 0;
-  background-image: url('images/bg-tablet-pattern.svg');
-  background-position: -15rem -5rem;
+  background-image: url('images/bg-tablet-pattern.svg'),
+                    url('images/bg-tablet-pattern.svg');
+  background-position: -15rem -5rem, 65rem -42rem;
   background-repeat: no-repeat;
   opacity: 0.1;
   
