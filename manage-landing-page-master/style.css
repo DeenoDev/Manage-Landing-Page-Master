@@ -284,6 +284,13 @@ p[data-width="wide"]{
 .cta{
   position: relative;
   isolation: isolate;
+  text-align: center;
+}
+
+@media (min-width: 50em){
+  .cta{
+    text-align: left;
+  }
 }
 
 .cta::before{
@@ -313,9 +320,17 @@ p[data-width="wide"]{
   align-items: center;
 }
 
+
+
 .justify-self-end {
   justify-self: end;
 }
+
+@media (min-width: 50em){
+  .justify-self-end-md {
+    justify-self: end;
+  }
+  }
 
 :where(.flow :not(:first-child)){
   margin-top: var(--flow-spacer, 3em);
