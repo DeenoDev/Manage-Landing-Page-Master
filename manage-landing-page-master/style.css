@@ -292,6 +292,8 @@ p[data-width="wide"]{
   z-index: -1;
   inset: 0;
   background-image: url('images/bg-tablet-pattern.svg');
+  background-position: -15rem -5rem;
+  background-repeat: no-repeat;
   opacity: 0.1;
   
 }
