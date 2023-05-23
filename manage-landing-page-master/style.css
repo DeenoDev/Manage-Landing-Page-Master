@@ -279,6 +279,18 @@ p[data-width="wide"]{
   }
 }
 
+/* Footer Navigation */
+
+.footer-nav a{
+  color: var(--clr-neutral);
+  text-decoration: none;
+}
+
+.footer-nav a:where(:hover, :focus){
+  color: var(--clr-accent-400);
+  text-decoration: none;
+}
+
 /* CTA */
 
 .cta{
