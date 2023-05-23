@@ -296,6 +296,30 @@ p[data-width="wide"]{
   text-decoration: none;
 }
 
+/* Social-List */
+
+.social-list{
+  display: flex;
+  gap: var(--size-300);
+}
+
+.social-icon{
+  width: var(--size-600);
+  fill: var(--clr-neutral-100);
+}
+
+.social-list a:is(:hover, :focus) .social-icon{
+  fill: var(--clr-accent-400);
+
+}
+
+@media(min-width:50em){
+  .social-icon{
+    width: var(--size-500);
+  }
+
+}
+
 /* CTA */
 
 .cta{
