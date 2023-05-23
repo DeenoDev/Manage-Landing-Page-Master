@@ -281,6 +281,11 @@ p[data-width="wide"]{
 
 /* Footer Navigation */
 
+.footer-nav{
+  columns: 2;
+
+}
+
 .footer-nav a{
   color: var(--clr-neutral);
   text-decoration: none;
