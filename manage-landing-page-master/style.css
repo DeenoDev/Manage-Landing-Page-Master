@@ -305,6 +305,7 @@ p[data-width="wide"]{
 
 .social-icon{
   width: var(--size-600);
+  aspect-ratio: 1;
   fill: var(--clr-neutral-100);
 }
 
