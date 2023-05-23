@@ -288,15 +288,33 @@ p[data-width="wide"]{
 
 .primary-footer-wrapper{
   display: grid;
+  gap: var(--size-700);
   grid-template-areas: 
     'form'
     'nav'
     'logo-social';
 }
 
+@media(min-width:50em){
+  .primary-footer-wrapper{
+    grid-template-areas: 
+    'logo-social nav form';
+  }
+}
+
 .primary-footer-wrapper > :nth-child(1){
   grid-area: logo-social;
-  background: red;
+  
+}
+
+.primary-footer-wrapper > :nth-child(2){
+  grid-area: nav;
+  
+}
+
+.primary-footer-wrapper > :nth-child(13){
+  grid-area: form;
+  
 }
 
 .primary-footer-wrapper > * {
