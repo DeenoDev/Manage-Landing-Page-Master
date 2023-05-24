@@ -121,14 +121,6 @@ svg {
   }
 }
 
-
-
-
-
-
-
-
-
 /* General Styling */
 
 body{
@@ -167,6 +159,10 @@ p[data-width="wide"]{
   background-color: var(--clr-neutral-100);
   color: var(--clr-accent-400);
 
+}
+
+.button[data-shadow='none']{
+  box-shadow: none;
 }
 
 .button[data-type="inverted"]:hover,
@@ -340,7 +336,7 @@ p[data-width="wide"]{
 
 .footer-nav{
   columns: 2;
-  gap: max(15vw, 2rem);
+  gap: clamp(var(--size-200), 30vw, var(--size-900));
 
 }
 
