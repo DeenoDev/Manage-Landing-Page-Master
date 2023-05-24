@@ -333,18 +333,14 @@ p[data-width="wide"]{
 @media(max-width: 50em){
   .primary-footer-wrapper > * {
     margin-inline: auto;
-  }
-
-  
+  }  
 }
-
-
 
 /* Footer Navigation */
 
 .footer-nav{
   columns: 2;
-  gap: min(30vw, 2rem);
+  gap: max(15vw, 2rem);
 
 }
 
