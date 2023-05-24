@@ -313,6 +313,12 @@ p[data-width="wide"]{
   
 }
 
+.primary-footer-form input{
+  border-radius: 100vw;
+  border: 0;
+
+}
+
 @media(min-width:50em){
   .primary-footer-wrapper{
     grid-template-areas: 
