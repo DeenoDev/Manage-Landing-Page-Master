@@ -313,9 +313,15 @@ p[data-width="wide"]{
   
 }
 
-.primary-footer-form input{
+.primary-footer form{
+  display: flex;
+  gap: var(--size-400);
+}
+
+input:where([type="text"], [type="email"]){
   border-radius: 100vw;
   border: 0;
+  padding: var(--size-300) var(--size-400) ;
 
 }
 
