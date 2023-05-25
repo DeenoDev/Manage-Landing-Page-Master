@@ -463,6 +463,12 @@ input:where([type="text"], [type="email"]){
   }
 }
 
+.numbered-items div::before,
+.numbered-items div::after{
+  height: 40px;
+
+}
+
 .numbered-items div::before{
   content: "0" counter(count) ;
   display: flex;
@@ -471,37 +477,34 @@ input:where([type="text"], [type="email"]){
   font-weight: var(--fw-bold);
   background-color: var(--clr-accent-400);
   padding: 0 var(--size-500);
-  height: 40px;
+  
   border-radius: 100vw;
   grid-row: 1 / 2;
   grid-column: 1 / 2;
+  
 }
 
-.numbered-items div::after{
-  content: "";
-  display: block;
-  z-index: -1;
-  border-radius: 100vw;
-  inset: 0 -100vw 0 0;
-  grid-column: 1 / -1;
-  grid-row: 1 / 2; 
-  height: 40px;
-  /* width: 100%; */
-  background: orange;
+@media (max-width: 40em){
+  .numbered-items div::after{
+    --bg: var(--clr-accent-100);
+    content: "";
+    display: block;
+    z-index: -1;
+    border-radius: 100vw 0 0 100vw;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;  
+    box-shadow: 5em 0 0 var(--bg);
+    background: var(--bg);
+  }
 }
-
-
-
-
-
 
 /* Utility classes */
 
 .container {
   --max-width:1110px;
-  --padding:1rem;
+  --container-padding:1rem;
 
-  width: min(var(--max-width), 100% - (var(--padding) *2));
+  width: min(var(--max-width), 100% - (var(--container-padding) *2));
   margin-inline: auto;
 }
 
