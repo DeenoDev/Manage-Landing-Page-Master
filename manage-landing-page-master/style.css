@@ -429,6 +429,8 @@ input:where([type="text"], [type="email"]){
 
 .numbered-items {
   counter-reset: count;
+  width: fit-content;
+  margin-inline: auto;
 }
 
 .numbered-items li{
@@ -522,11 +524,33 @@ input:where([type="text"], [type="email"]){
   .justify-self-end-md {
     justify-self: end;
   }
+
+
   }
+
+
 
 :where(.flow :not(:first-child)){
   margin-top: var(--flow-spacer, 3em);
 
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-center p{
+  margin-inline: auto;
+}
+
+@media (max-width: 50em){
+.text-center-sm-only{
+  text-align: center;
+}
+
+.text-center-sm-only p{
+  margin-inline: auto;
+}
 }
 
 .even-columns{
@@ -542,6 +566,8 @@ input:where([type="text"], [type="email"]){
   }
 
 }
+
+
 
 .visually-hidden {
   position: absolute;
@@ -625,6 +651,11 @@ input:where([type="text"], [type="email"]){
 
 .padding-block-700 {
   padding-block: var(--size-700);
+}
+
+.margin-bottom-700{
+  margin-block-end: var(--size-700);
+  
 }
 
 .display-sm-none{
