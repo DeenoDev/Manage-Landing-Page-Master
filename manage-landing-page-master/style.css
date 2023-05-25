@@ -435,7 +435,20 @@ input:where([type="text"], [type="email"]){
   counter-increment: count;
 }
 
-.numbered-items li::before{
+.numbered-items div{
+  display: grid;
+  align-items: center;
+  column-gap: var(--size-400);
+  grid-template-columns: min-content 1fr;
+
+}
+
+.numbered-items p{
+  grid-column: 1/-1;
+
+}
+
+.numbered-items div::before{
   content: "0" counter(count) ;
   background-color: var(--clr-accent-400);
   color: var(--clr-accent-100);
@@ -443,6 +456,8 @@ input:where([type="text"], [type="email"]){
   padding: var(--size-200) var(--size-500);
   border-radius: 100vw;
 }
+
+
 
 
 
