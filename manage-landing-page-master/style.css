@@ -436,7 +436,12 @@ input:where([type="text"], [type="email"]){
 }
 
 .numbered-items li::before{
-  content: counter(count);
+  content: "0" counter(count) ;
+  background-color: var(--clr-accent-400);
+  color: var(--clr-accent-100);
+  font-weight: var(--fw-bold);
+  padding: var(--size-200) var(--size-500);
+  border-radius: 100vw;
 }
 
 
