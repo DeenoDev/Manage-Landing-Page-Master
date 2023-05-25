@@ -428,14 +428,18 @@ input:where([type="text"], [type="email"]){
 /* Numbered Items */
 
 .numbered-items {
-  list-style: decimal !important;
+  counter-reset: count;
 }
 
-.numbered-items ::marker{
-  color: red;
-  font-weight: bold;
-  background-color: green;
+.numbered-items li{
+  counter-increment: count;
 }
+
+.numbered-items li::before{
+  content: counter(count);
+}
+
+
 
 
 /* Utility classes */
