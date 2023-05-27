@@ -7,6 +7,7 @@
   --clr-primary-400: hsl(228, 39%, 23%);
 
   --clr-neutral-900: hsl(232, 12%, 13%);
+  --clr-neutral-200: hsl(0 0% 97%);
   --clr-neutral-100: hsl(0 0% 100%);
 
   --ff-primary: "Be Vietnam Pro", sans-serif;
@@ -498,6 +499,20 @@ input:where([type="text"], [type="email"]){
     box-shadow: 5em 0 0 var(--bg);
     background: var(--bg);
   }
+}
+
+/* Slider */
+
+.slider {
+  display: flex;
+  list-style: none;
+}
+
+.slider > * {
+  width: 100%;
+  flex: 0 0 auto;
+  border-radius: var(--size-300);
+  background: var(--clr-neutral-200);
 }
 
 /* Utility classes */
