@@ -506,25 +506,27 @@ input:where([type="text"], [type="email"]){
 .slider {
   display: flex;
   list-style: none;
+  overflow: visible;
   
 }
 
 .slider > * {
   position: relative;
-  padding: var(--size-900) var(--size-600) var(--size-600);
-  width: 100%;
+  padding: var(--size-800) var(--size-600) var(--size-600);
   flex: 0 0 auto;
   border-radius: var(--size-300);
   background: var(--clr-neutral-200);
+  width: 200px;
 }
 
 .slider img{
   width: var(--size-800);
   position: absolute;
+  inset: 0;
   margin-inline: auto;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%, -50%);
+  top: -32px;
+  
+  
   
   /* transform: translateY(-50%); */
 }
