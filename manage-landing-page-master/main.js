@@ -18,9 +18,11 @@ const slider = new A11YSlider(document.querySelector('.slider'), {
     adaptiveHeight: false,
     dots: true,
     centerMode: true,
+    arrows: false,
     responsive: {
       480: {
-            dots: true, // dots enabled 480px and up
+            dots: false, // dots enabled 480px and up
+            
         },
       },
   });
