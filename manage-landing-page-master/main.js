@@ -20,7 +20,7 @@ const slider = new A11YSlider(document.querySelector('.slider'), {
     centerMode: true,
     responsive: {
       480: {
-            dots: false, // dots enabled 480px and up
+            dots: true, // dots enabled 480px and up
         },
       },
   });
