@@ -515,6 +515,13 @@ input:where([type="text"], [type="email"]){
   position: relative;
   flex: 0 0 auto;
   width: 100%;
+  
+ 
+}
+
+.a11y-slider-container{
+  margin-block: var(--size-700);
+  
 }
 
 @media (min-width: 30em){
@@ -526,7 +533,7 @@ input:where([type="text"], [type="email"]){
 
 @media (min-width: 50em){
   .slider > * {
-    width: 37%;
+    width: 35%;
   }
 
 }
@@ -541,12 +548,17 @@ input:where([type="text"], [type="email"]){
   width: var(--size-800);
   position: relative;
   top: calc(var(--size-800) / 2);
-  margin-inline: auto;
-  
-  
-  
-  
+  margin-inline: auto; 
   /* transform: translateY(-50%); */
+}
+
+.a11y-slider-dots li{
+  display: block;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  margin: 0;
+  color: #fff;
 }
 
 /* Utility classes */
