@@ -514,7 +514,21 @@ input:where([type="text"], [type="email"]){
 .slider > * {
   position: relative;
   flex: 0 0 auto;
-  width: 400px;
+  width: 100%;
+}
+
+@media (min-width: 30em){
+  .slider > * {
+    width: 50%;
+  }
+
+}
+
+@media (min-width: 50em){
+  .slider > * {
+    width: 37%;
+  }
+
 }
 
 .slider-content {
