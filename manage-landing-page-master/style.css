@@ -593,19 +593,35 @@ input:where([type="text"], [type="email"]){
 
 }
 
-.image-with-blob-bg{
-  /* position: relative; */
+
+
+/* Image with blob bg */
+
+@media (max-width: 50em){
+  .hero__image{
+    order: -1;
+  }
 }
 
-.image-with-blob-bg::before{
+.hero__image::before{
   content: " ";
   position : absolute;
-  left: 0;
+  z-index: -1;
+  right: 0;
   top: 0;
-  width: 100%;
-  aspect-ratio: 1;
+  width: 87%;
+  max-height: 70dvh;
+  max-height: 70vh;
+  aspect-ratio: 1 / 1.2;
   background-image: url('images/bg-tablet-pattern.svg');
+  background-repeat: no-repeat;
   background-position: bottom left;
+}
+
+@media(min-width:50em){
+  .hero__image::before{
+    width: 45%;
+  }
 }
 
 
@@ -765,6 +781,10 @@ input:where([type="text"], [type="email"]){
 .margin-bottom-700{
   margin-block-end: var(--size-700);
   
+}
+
+.mx-auto{
+  margin-inline: auto;
 }
 
 .display-sm-none{
