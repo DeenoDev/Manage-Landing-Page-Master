@@ -507,6 +507,7 @@ input:where([type="text"], [type="email"]){
   display: flex;
   gap: var(--size-600);
   list-style: none;
+  
   /* overflow: visible; */
   
 }
@@ -521,10 +522,18 @@ input:where([type="text"], [type="email"]){
 
 .a11y-slider-container{
   margin-block: var(--size-700);
+  margin-inline: var(--size-400);
   
 }
 
 @media (min-width: 30em){
+  .slider{
+    scroll-padding-inline: 25px;
+  }
+  .a11y-slider-container{
+    margin-inline: 0;
+    
+  }
   .slider > * {
     width: 50%;
   }
@@ -582,6 +591,21 @@ input:where([type="text"], [type="email"]){
 .a11y-slider-dots li button.active{
   background: var(--clr-accent-400);
 
+}
+
+.image-with-blob-bg{
+  /* position: relative; */
+}
+
+.image-with-blob-bg::before{
+  content: " ";
+  position : absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  aspect-ratio: 1;
+  background-image: url('images/bg-tablet-pattern.svg');
+  background-position: bottom left;
 }
 
 
