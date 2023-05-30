@@ -221,13 +221,18 @@ p[data-width="wide"]{
 
 
 @media (max-width: 47em){
+  .primary-header[data-overlay]{
+    position: relative;
+    z-index: 999;
+  }
+  
   .primary-navigation{
     display: none;
     position: fixed;
-    z-index: 1000;
+    
     padding: var(--size-700);
     inset: 7rem var(--size-400) auto;
-    max-width: 40rem;
+    max-width: 25rem;
     margin-inline: auto;
     background: var(--clr-neutral-100);
     border-radius: var(--size-100);
@@ -237,7 +242,6 @@ p[data-width="wide"]{
   .primary-header[data-overlay]::before{
     content: " ";
     position: fixed;
-    z-index: 999;
     inset: 0;
     background-image: linear-gradient(rgb(0 0 0/ 0), rgb(0 0 0 / 0.8));
     /* height: 100vh; */
@@ -274,6 +278,7 @@ p[data-width="wide"]{
   
   .mobile-nav-toggle .icon-close{
     display: none;
+    z-index: 1001;
   }
 }
 
