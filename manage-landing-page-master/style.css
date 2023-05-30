@@ -229,7 +229,6 @@ p[data-width="wide"]{
   .primary-navigation{
     display: none;
     position: fixed;
-    
     padding: var(--size-700);
     inset: 7rem var(--size-400) auto;
     max-width: 25rem;
@@ -262,6 +261,8 @@ p[data-width="wide"]{
     
   }
 
+ 
+
 
   .mobile-nav-toggle{
     display: block;
@@ -273,12 +274,13 @@ p[data-width="wide"]{
     background: transparent;
     border: 0;
     padding: 0.5em;
+    width: 5em;
+    aspect-ratio: 1;
   
   }
   
-  .mobile-nav-toggle .icon-close{
-    display: none;
-    z-index: 1001;
+  .mobile-nav-toggle[aria-expanded="true"] {
+    background-image: url("images/icon-close.svg");
   }
 }
 
