@@ -294,6 +294,7 @@ p[data-width="wide"]{
 .primary-footer-wrapper{
   display: grid;
   gap: var(--size-700);
+  justify-content: center;
   grid-template-areas: 
     'form'
     'nav'
@@ -326,18 +327,16 @@ p[data-width="wide"]{
 .primary-footer-form{
   grid-area: form;
 
-  display: grid;
-  align-content: space-between;
-  
-  
-}
-
-
-
-.primary-footer form{
   display: flex;
   gap: var(--size-200);
+  
+  
 }
+
+.primary-footer-copyright{
+  grid-area: copyright;
+}
+
 
 input:where([type="text"], [type="email"]){
   border-radius: 100vw;
