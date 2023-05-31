@@ -816,6 +816,11 @@ input:where([type="text"], [type="email"]){
   
 }
 
+.margin-top-900{
+  margin-block-end: var(--size-900);
+  
+}
+
 .mx-auto{
   margin-inline: auto;
 }
