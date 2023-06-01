@@ -335,6 +335,7 @@ p[data-width="wide"]{
 
 .primary-footer-copyright{
   grid-area: copyright;
+  opacity: 0.7;
 }
 
 
@@ -346,23 +347,14 @@ input:where([type="text"], [type="email"]){
 }
 
 @media(min-width: 47em){
-  .primary-footer-wrapper{
-    grid-template-areas: 
-    'logo-social nav form';
-  }
-
-  .primary-footer-logo-social{
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: var(--size-700);
-  }
+  
 }
 
-@media(max-width: 47em){
+/* @media(max-width: 47em){
   .primary-footer-wrapper > * {
     margin-inline: auto;
   }  
-}
+} */
 
 /* Footer Navigation */
 
