@@ -295,6 +295,7 @@ p[data-width="wide"]{
   display: grid;
   gap: var(--size-700);
   justify-content: center;
+  align-items: start;
   grid-template-areas: 
     'form'
     'nav'
@@ -321,6 +322,7 @@ p[data-width="wide"]{
 
 .primary-footer-nav{
   grid-area: nav;
+  margin-inline: auto;
   
 }
 
@@ -342,7 +344,8 @@ p[data-width="wide"]{
 input:where([type="text"], [type="email"]){
   border-radius: 100vw;
   border: 0;
-  padding: var(--size-300) var(--size-400) ;
+  padding: var(--size-300) var(--size-500) ;
+  min-width: 14rem;
 
 }
 
@@ -351,6 +354,11 @@ input:where([type="text"], [type="email"]){
     grid-template-areas: 
     'logo nav form'
     'social nav copyright';
+    grid-template-columns: min-content 1fr min-content;
+  }
+
+  .primary-footer-copyright{
+    text-align: right;
   }
   
 }
@@ -365,7 +373,7 @@ input:where([type="text"], [type="email"]){
 
 .footer-nav{
   columns: 2;
-  gap: clamp(var(--size-200), 30vw, var(--size-900));
+  gap: clamp(4rem, 10vw, 7rem);
 
 }
 
@@ -390,6 +398,16 @@ input:where([type="text"], [type="email"]){
   width: var(--size-600);
   aspect-ratio: 1;
   fill: var(--clr-neutral-100);
+}
+
+@media (min-width: 47em){
+  .social-list{
+    gap: var(--size-300);
+  }
+  .social-icon{
+    width: var(--size-500);
+    max-width: revert;
+  }
 }
 
 .social-list a:is(:hover, :focus) .social-icon{
