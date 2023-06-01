@@ -347,6 +347,11 @@ input:where([type="text"], [type="email"]){
 }
 
 @media(min-width: 47em){
+  .primary-footer-wrapper{
+    grid-template-areas: 
+    'logo nav form'
+    'social nav copyright';
+  }
   
 }
 
