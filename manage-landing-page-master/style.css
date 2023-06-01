@@ -304,21 +304,16 @@ p[data-width="wide"]{
     'copyright';
 }
 
+.primary-footer-wrapper > *{
+  margin-inline: auto;
+
+}
+
 .primary-footer-logo{
   grid-area: logo;
 }
 
 
-
-/* .primary-footer-logo-social{
-  grid-area: logo-social;
-
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  gap: var(--size-700);
-  
-} */
 
 .primary-footer-nav{
   grid-area: nav;
@@ -338,6 +333,7 @@ p[data-width="wide"]{
 .primary-footer-copyright{
   grid-area: copyright;
   opacity: 0.7;
+  text-align: center;
 }
 
 
